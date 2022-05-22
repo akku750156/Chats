@@ -6,7 +6,7 @@ export default function Home() {
       <Head>
         <title>Chats</title>
         <meta name="description" />
-        <link rel="icon" href="/icon" />
+        <link rel="icon" href="/icon.png" />
       </Head>
     </div>
   );
