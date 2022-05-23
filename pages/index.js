@@ -10,7 +10,7 @@ export default function Home() {
         <meta name="description" />
         <link rel="icon" href="/icon.png" />
       </Head>
-      <div className="h-full p-6 rounded-[40px] bg-white dark:bg-black">
+      <div className="h-full p-6 rounded-2xl bg-white dark:bg-black shadow-[0px_0px_100px_5px_rgba(0,0,1,0.5)]">
         <Navbar />
       </div>
     </div>

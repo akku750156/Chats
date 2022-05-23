@@ -1,13 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { Switch } from "antd";
 import { MessageFilled, BellOutlined, SearchOutlined } from "@ant-design/icons";
 import { useTheme } from "next-themes";
 
 function Navbar() {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="border-b border-gray-700 py-8 flex justify-between items-center">
+    <div className="border-b border-gray-700 py-6 flex justify-between items-center">
       <div className="flex items-center">
         <MessageFilled style={{ color: "#873AE3" }} className="mr-2" />
         <div>Chats</div>
@@ -25,7 +24,13 @@ function Navbar() {
           {theme === "light" ? (
             <Image src="/dark.png" alt="dark" height="30" width="30" />
           ) : (
-            <Image src="/light.png" alt="light" height="30" width="30" />
+            <Image
+              src="/light.png"
+              alt="light"
+              height="30"
+              width="30"
+              className="text-white"
+            />
           )}
         </button>
         <BellOutlined
@@ -36,7 +41,7 @@ function Navbar() {
           <Image
             height="30"
             width="30"
-            className="rounded-full"
+            className="rounded-full object-cover"
             src="/avatar.png"
             alt="Avatar"
           />
