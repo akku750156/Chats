@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div className="border-b py-8 flex justify-between items-center">
       <div className="flex items-center">
-        <MessageFilled style={{ color: "purple" }} className="mr-2" />
+        <MessageFilled style={{ color: "#873AE3" }} className="mr-2" />
         <div>Chats</div>
       </div>
       <div className="flex items-center">
