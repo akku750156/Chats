@@ -2,6 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 
 import Navbar from "../components/Navbar";
+import MainChat from "../components/MainChat";
+import InfoBar from "../components/InfoBar";
+import LeftBar from "../components/LeftBar";
 export default function Home() {
   return (
     <div className="h-screen bg-gradient-to-r from-violet-300 to-blue-200 p-8 dark:from-[#160f2a9e] dark:to-[#00496870]">
@@ -12,6 +15,11 @@ export default function Home() {
       </Head>
       <div className="h-full p-6 rounded-2xl bg-white dark:bg-black shadow-[0px_0px_100px_5px_rgba(0,0,1,0.5)]">
         <Navbar />
+        <div className="flex w-full ">
+          <LeftBar/>
+          <MainChat/>
+          <InfoBar/>
+        </div>
       </div>
     </div>
   );

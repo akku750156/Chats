@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 function Navbar() {
   const { theme, setTheme } = useTheme();
   return (
-    <div className="border-b border-gray-700 py-6 flex justify-between items-center">
+    <div className="border-b dark:border-gray-900 border-gray-200 py-6 flex justify-between items-center">
       <div className="flex items-center">
         <MessageFilled style={{ color: "#873AE3" }} className="mr-2" />
         <div>Chats</div>
